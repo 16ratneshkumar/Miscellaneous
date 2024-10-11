@@ -1,4 +1,4 @@
-# STUDENT REGISTRATION FROM
+# Student Registration Form
 import tkinter as tk
 from tkinter import messagebox
 from reportlab.lib.pagesizes import A4
