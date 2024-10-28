@@ -26,6 +26,7 @@ void midpointCircle(int xc, int yc, int r) {
             p += 2 * (x - y) + 1;
         }
         circleplotPoints(xc,yc,x,y);
+        delay(4);
     }
 }
 

@@ -21,6 +21,7 @@ void linedda(int x1,int y1,int x2,int y2){
         x+=xIncr;
         y+=yIncr;
         putpixel(round(x),round(y),WHITE);
+        delay(2);
     }
 }
 

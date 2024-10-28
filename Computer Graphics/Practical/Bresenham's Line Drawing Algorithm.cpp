@@ -29,6 +29,7 @@ void bresenhamLine(int x1, int y1, int x2, int y2) {
             p += twoDyDx;
         }
         putpixel(x, y, WHITE);
+        delay(2);
     }
 }
 
