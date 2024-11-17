@@ -4,7 +4,7 @@
 using namespace std;
 
 struct Point {
-    int x, y;
+    int x, y, w;
 };
 
 // Function to apply translation
@@ -48,7 +48,7 @@ int main() {
     int gd = DETECT, gm;
     initgraph(&gd, &gm, (char*)"");
 
-    Point originalshape[] = {{50, 50}, {150, 50}, {150, 150}, {50, 150}}; // A quadrilateral
+    Point originalshape[] = {{50, 50, 1}, {150, 50, 1}, {150, 150, 1}, {50, 150, 1}}; // A quadrilateral
     int n = sizeof(originalshape) / sizeof(originalshape[0]);
     Point transformedshape[4];
 
@@ -80,9 +80,6 @@ int main() {
     scale(originalshape, transformedshape, sx, sy,n);
     setcolor(GREEN);
     drawShape(transformedshape, n);
-    getch();
-
-
     getch();
     closegraph();
     return 0;
